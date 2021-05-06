@@ -13,10 +13,13 @@
 <form action="/user" method="post">
     <input value="REST-POST 提交" type="submit">
 </form>
-<form action="/user" method="delete">
+<form action="/user" method="post">
+    <!--delete大小写均可，后续会全部转化为大写-->
+    <input name="_m" type="hidden" value="delete">
     <input value="REST-DELETE 提交" type="submit">
 </form>
-<form action="/user" method="put">
+<form action="/user" method="post">
+    <input name="_m" type="hidden" value="PUT">
     <input value="REST-PUT 提交" type="submit">
 </form>
 </body>
