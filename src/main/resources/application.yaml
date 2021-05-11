@@ -17,3 +17,7 @@ mvc:
             enabled: true #开启页面表单的Rest功能
         contentnegotiation:
           favor-parameter: true #开启请求参数内容协商模式
+
+server:
+  servlet:
+    context-path: /world  #添加项目服务路径

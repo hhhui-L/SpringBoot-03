@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:text="${msg}">hello world!</h1>
+<h2>
+    <!--${link}：真正的取出link的值-->
+    <a href="www.atguigu.com" th:href="${link}">去百度</a> <br>
+    <!--@{link}：把link认为是一个要去的地址，然后拼装到地址-->
+    <!--相对路径：@{link}-->
+    <!--绝对路径：@{/link}   去当前项目下的link-->
+    <a href="www.atguigu.com" th:href="@{/link}">去百度。</a>
+</h2>
+</body>
+</html>
